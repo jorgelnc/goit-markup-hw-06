@@ -1,3 +1,3 @@
 <!-- Enlace al Proyecto -->
 
-https://jorgelnc.github.io/goit-markup-hw-05/
+https://jorgelnc.github.io/goit-markup-hw-06/
