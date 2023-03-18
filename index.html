@@ -387,10 +387,8 @@
     <footer class="address-section">
       <div class="content-address container">
         <address class="address-area">
+          <a href="./index.html" class="logo-principal-foot">WebStudio</a>
           <ul class="main-address-list list">
-            <li>
-              <a href="./index.html" class="logo-principal-foot">WebStudio</a>
-            </li>
             <li>
               <a
                 href="https://goo.gl/maps/ckuexV7HdSYDYAxT6"
@@ -448,11 +446,73 @@
             </div>
           </ul>
         </div>
+        <div class="input-mail-subscribe">
+          <p class="title-informative-boletin">
+            Suscríbase al Boletín informativo
+          </p>
+          <form name="form-boletin" class="input-boletin">
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="user-email"
+              placeholder="Correo Electronico"
+            />
+            <button type="submit" class="current-button subscribe-button">
+              Suscríbase
+              <svg class="icon-subscribe" width="20" height="20">
+                <use href="./symbol-defs.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="Backdrop is-hidden" data-modal>
+    <div class="Backdrop is-hidde" data-modal>
       <div class="modal">
         <button class="data-modal-close" data-modal-close>x</button>
+        <div class="form-modal">
+        <p>Deje sus datos, nos contactaremos con usted</p>
+          <form name="leave-your-information" class="leave-your-information">
+             <label for="name">Nombre</label>
+             <div class="container-name">
+             <input type="text" name="name" id="name" >
+             <svg width="13" height="13" class="icon-person">
+              <use href="./symbol-defs.svg#icon-individuo"></use>
+            </svg> 
+            </div>  
+            <label for="phone" class="phone-container">Telefono</label>
+            <div class="phone-container">
+            <input type="number" name="phone" id="phone-number">
+            <svg width="13" height="13" class="icon-phone-modal">
+              <use href="./symbol-defs.svg#icon-telefono-descol"></use>
+            </svg>
+            </div>
+            <label for="email">E-mail</label>
+            <div class="container-mail">
+            <input type="email" name="email" id="email">
+            <svg width="13" height="13" class="icon-mail-modal">
+              <use href="./symbol-defs.svg#icon-sobre-mail"></use>
+            </svg>
+            </div>
+            <label for="comments">Comentarios</label>
+            <div>
+            <textarea name="Comments" id="comments" placeholder="Introduzca el texto"></textarea>
+            </div>
+            <div class="agreements-label">
+            <label for="agreements"></label>
+            <input type="checkbox" name="agreements" id="agreements" value="accept">
+            <svg width="11" height="8" class="icon-check-agreements">
+              <use href="./symbol-defs.svg#icon-Check"></use>
+            </svg>
+            <span class="agreements-text">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</span>
+            </div>
+            <div class="send-button-modal-container">
+            <button type="submit" class="submit-modal-button">Enviar</button>
+            </div>
+          </form>
+        </div>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
