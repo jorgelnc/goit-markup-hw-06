@@ -468,19 +468,21 @@
         </div>
       </div>
     </footer>
-    <div class="Backdrop is-hidde" data-modal>
+    <div class="Backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="data-modal-close" data-modal-close>x</button>
         <div class="form-modal">
         <p>Deje sus datos, nos contactaremos con usted</p>
           <form name="leave-your-information" class="leave-your-information">
-             <label for="name">Nombre</label>
-             <div class="container-name">
-             <input type="text" name="name" id="name" >
-             <svg width="13" height="13" class="icon-person">
+        <!-- Label Modal Name -->
+            <label for="name">Nombre</label>
+            <div class="container-name">
+            <input type="text" name="name" id="name" >
+            <svg width="13" height="13" class="icon-person">
               <use href="./symbol-defs.svg#icon-individuo"></use>
             </svg> 
-            </div>  
+            </div> 
+        <!-- Label Modal phone number -->
             <label for="phone" class="phone-container">Telefono</label>
             <div class="phone-container">
             <input type="number" name="phone" id="phone-number">
@@ -488,6 +490,7 @@
               <use href="./symbol-defs.svg#icon-telefono-descol"></use>
             </svg>
             </div>
+        <!-- Label Modal phone Email -->
             <label for="email">E-mail</label>
             <div class="container-mail">
             <input type="email" name="email" id="email">
@@ -495,22 +498,27 @@
               <use href="./symbol-defs.svg#icon-sobre-mail"></use>
             </svg>
             </div>
+        <!-- Label Modal  Comments textarea -->
             <label for="comments">Comentarios</label>
             <div>
             <textarea name="Comments" id="comments" placeholder="Introduzca el texto"></textarea>
             </div>
+            </form>
+        <!-- Label Modal  Checkbox agreements -->
             <div class="agreements-label">
-            <label for="agreements"></label>
+            <label>
             <input type="checkbox" name="agreements" id="agreements" value="accept">
-            <svg width="11" height="8" class="icon-check-agreements">
+            <svg width="16" height="15" class="icon-check-agreements">
               <use href="./symbol-defs.svg#icon-Check"></use>
             </svg>
             <span class="agreements-text">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</span>
+            </label>
             </div>
+        <!--  Modal Submit Button -->
             <div class="send-button-modal-container">
             <button type="submit" class="submit-modal-button">Enviar</button>
             </div>
-          </form>
+          
         </div>
         </div>
       </div>
